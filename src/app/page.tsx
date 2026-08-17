@@ -9,16 +9,16 @@ export default function HomePage() {
 
   return (
     <div>
-      <section className="relative overflow-hidden border-b border-gold/15">
+      <section className="relative overflow-hidden border-b border-line">
         <div className="grid-constellation pointer-events-none absolute inset-0 opacity-70" />
-        <div className="relative mx-auto flex min-h-[88vh] max-w-6xl flex-col justify-end px-4 py-20 sm:px-6">
-          <p className="reveal text-[11px] uppercase tracking-[0.32em] text-gold">
+        <div className="relative mx-auto flex min-h-[72svh] max-w-6xl flex-col justify-end px-4 py-16 sm:min-h-[88vh] sm:px-6 sm:py-20">
+          <p className="reveal text-[11px] uppercase tracking-[0.32em] text-accent">
             {site.university} · {site.location}
           </p>
-          <h1 className="reveal reveal-delay-1 mt-6 max-w-5xl font-display text-5xl leading-[0.95] tracking-tight sm:text-7xl">
+          <h1 className="reveal reveal-delay-1 mt-6 max-w-5xl font-display text-4xl leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
             {site.name}
           </h1>
-          <p className="reveal reveal-delay-2 mt-5 font-display text-2xl text-gold sm:text-3xl">
+          <p className="reveal reveal-delay-2 mt-5 font-display text-2xl text-accent sm:text-3xl">
             {site.university}
           </p>
           <p className="reveal reveal-delay-2 mt-8 max-w-2xl text-lg leading-8 text-muted">
@@ -28,16 +28,10 @@ export default function HomePage() {
             Fall 2026.
           </p>
           <div className="reveal reveal-delay-3 mt-10 flex flex-col gap-3 sm:flex-row">
-            <Link
-              href="/research"
-              className="bg-gold px-6 py-3 text-center text-sm font-medium text-navy-deep"
-            >
+            <Link href="/research" className="btn-primary">
               Research
             </Link>
-            <Link
-              href="/phd"
-              className="border border-gold/40 px-6 py-3 text-center text-sm text-gold"
-            >
+            <Link href="/phd" className="btn-secondary">
               Ph.D. Program
             </Link>
           </div>
@@ -47,10 +41,10 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-gold">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-accent">
               The Laboratory
             </p>
-            <h2 className="mt-4 font-display text-4xl">
+            <h2 className="mt-4 font-display text-3xl sm:text-4xl">
               Doctoral research in the {site.department}.
             </h2>
           </div>
@@ -80,25 +74,25 @@ export default function HomePage() {
       <div className="hairline" />
 
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
-        <div className="flex items-end justify-between gap-6">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="text-[11px] uppercase tracking-[0.28em] text-gold">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-accent">
               Research
             </p>
-            <h2 className="mt-3 font-display text-4xl">Research areas</h2>
+            <h2 className="mt-3 font-display text-3xl sm:text-4xl">Research areas</h2>
           </div>
-          <Link href="/research" className="hidden text-sm text-gold sm:inline">
+          <Link href="/research" className="link-ui text-sm">
             All research →
           </Link>
         </div>
-        <div className="mt-12 grid gap-px bg-gold/15 sm:grid-cols-2">
+        <div className="mt-12 grid gap-px bg-line sm:grid-cols-2">
           {researchAreas.map((area) => (
             <Link
               key={area.slug}
               href={`/research/${area.slug}`}
               className="bg-background p-6 transition-colors hover:bg-card"
             >
-              <p className="font-mono text-xs text-gold">{area.index}</p>
+              <p className="font-mono text-xs text-accent">{area.index}</p>
               <h3 className="mt-3 font-display text-2xl">{area.title}</h3>
               <p className="mt-3 text-sm leading-6 text-muted">{area.short}</p>
             </Link>
@@ -106,21 +100,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-gold/15 bg-card/30">
+      <section className="border-y border-line bg-band">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
-          <p className="text-[11px] uppercase tracking-[0.28em] text-gold">
+          <p className="text-[11px] uppercase tracking-[0.28em] text-accent">
             Publications
           </p>
-          <h2 className="mt-3 font-display text-4xl">Selected publications</h2>
-          <ol className="mt-10 divide-y divide-gold/15">
+          <h2 className="mt-3 font-display text-3xl sm:text-4xl">Selected publications</h2>
+          <ol className="mt-10 divide-y divide-line">
             {papers.map((paper) => (
               <li key={paper.id} className="py-6">
-                <p className="font-mono text-xs text-gold">{paper.year}</p>
+                <p className="font-mono text-xs text-accent">{paper.year}</p>
                 <a
                   href={paper.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-2 block font-display text-2xl leading-snug hover:text-gold"
+                  className="mt-2 block font-display text-2xl leading-snug hover:text-accent"
                 >
                   {paper.title}
                 </a>
@@ -128,15 +122,15 @@ export default function HomePage() {
               </li>
             ))}
           </ol>
-          <Link href="/publications" className="mt-6 inline-block text-sm text-gold">
+          <Link href="/publications" className="mt-6 inline-block text-sm text-accent">
             All selected publications →
           </Link>
         </div>
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2">
-        <div className="border border-gold/20 p-8">
-          <p className="text-[11px] uppercase tracking-[0.28em] text-gold">
+        <div className="panel p-5 sm:p-8">
+          <p className="text-[11px] uppercase tracking-[0.28em] text-accent">
             Ph.D. Program
           </p>
           <h2 className="mt-3 font-display text-3xl">
@@ -147,24 +141,21 @@ export default function HomePage() {
             Assistantship details are published by the university. Confirm them
             with the coordinator or Graduate Admissions.
           </p>
-          <Link
-            href="/phd"
-            className="mt-6 inline-block bg-gold px-5 py-2.5 text-sm text-navy-deep"
-          >
+          <Link href="/phd" className="btn-primary mt-6">
             Ph.D. Program
           </Link>
         </div>
         <div>
-          <p className="text-[11px] uppercase tracking-[0.28em] text-gold">
+          <p className="text-[11px] uppercase tracking-[0.28em] text-accent">
             News
           </p>
           <ul className="mt-6 space-y-5">
             {news.slice(0, 3).map((item) => (
               <li key={item.slug}>
-                <p className="font-mono text-xs text-gold">{item.date}</p>
+                <p className="font-mono text-xs text-accent">{item.date}</p>
                 <Link
                   href={`/news/${item.slug}`}
-                  className="mt-1 block font-display text-xl hover:text-gold"
+                  className="mt-1 block font-display text-xl hover:text-accent"
                 >
                   {item.title}
                 </Link>

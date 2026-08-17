@@ -25,7 +25,7 @@ export default async function NewsDetailPage({ params }: Props) {
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
-      <p className="font-mono text-xs text-gold">{item.date}</p>
+      <p className="font-mono text-xs text-accent">{item.date}</p>
       <h1 className="mt-4 font-display text-4xl leading-tight sm:text-5xl">
         {item.title}
       </h1>
@@ -37,13 +37,13 @@ export default async function NewsDetailPage({ params }: Props) {
       </div>
       {item.href ? (
         <p className="mt-10">
-          <a href={item.href} className="text-gold" target="_blank" rel="noreferrer">
+          <a href={item.href} className="text-accent" target="_blank" rel="noreferrer">
             {item.hrefLabel ?? "Source"} ↗
           </a>
         </p>
       ) : null}
       <p className="mt-14">
-        <Link href="/news" className="text-sm text-gold">
+        <Link href="/news" className="text-sm text-accent">
           ← All news
         </Link>
       </p>

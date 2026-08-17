@@ -3,23 +3,23 @@ import { nav, site } from "@/lib/site";
 
 export function SiteFooter() {
   return (
-    <footer className="mt-auto border-t border-gold/15">
+    <footer className="mt-auto border-t border-line">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3">
         <div>
           <p className="font-display text-2xl">{site.name}</p>
-          <p className="mt-1 text-sm text-gold">{site.university}</p>
+          <p className="mt-1 text-sm text-accent">{site.university}</p>
           <p className="mt-3 max-w-sm text-sm leading-6 text-muted">
             Research laboratory of the {site.department}.
           </p>
         </div>
         <div>
-          <p className="text-[11px] uppercase tracking-[0.22em] text-gold">
+          <p className="text-[11px] uppercase tracking-[0.22em] text-accent">
             Navigate
           </p>
           <ul className="mt-4 space-y-2 text-sm">
             {nav.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="hover:text-gold">
+                <Link href={item.href} className="inline-flex min-h-11 items-center hover:text-accent">
                   {item.label}
                 </Link>
               </li>
@@ -27,14 +27,14 @@ export function SiteFooter() {
           </ul>
         </div>
         <div>
-          <p className="text-[11px] uppercase tracking-[0.22em] text-gold">
+          <p className="text-[11px] uppercase tracking-[0.22em] text-accent">
             Official Kean
           </p>
           <ul className="mt-4 space-y-2 text-sm">
             <li>
               <a
                 href={site.links.phd}
-                className="hover:text-gold"
+                className="inline-flex min-h-11 items-center hover:text-accent"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -44,7 +44,7 @@ export function SiteFooter() {
             <li>
               <a
                 href={site.links.department}
-                className="hover:text-gold"
+                className="inline-flex min-h-11 items-center hover:text-accent"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -54,7 +54,7 @@ export function SiteFooter() {
             <li>
               <a
                 href={site.links.faculty}
-                className="hover:text-gold"
+                className="inline-flex min-h-11 items-center hover:text-accent"
                 target="_blank"
                 rel="noreferrer"
               >

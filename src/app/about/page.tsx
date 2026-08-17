@@ -47,8 +47,8 @@ export default function AboutPage() {
           </p>
         </article>
         <aside className="space-y-8 lg:col-span-5">
-          <div className="border border-gold/20 p-6">
-            <p className="text-[11px] uppercase tracking-[0.22em] text-gold">
+          <div className="panel p-5 sm:p-6">
+            <p className="text-[11px] uppercase tracking-[0.22em] text-accent">
               At a glance
             </p>
             <dl className="mt-5 space-y-4 text-sm">
@@ -75,13 +75,13 @@ export default function AboutPage() {
             </dl>
           </div>
           <div className="flex flex-col gap-3 text-sm">
-            <Link href="/people" className="text-gold">
+            <Link href="/people" className="text-accent">
               People →
             </Link>
-            <Link href="/research" className="text-gold">
+            <Link href="/research" className="text-accent">
               Research →
             </Link>
-            <a href={site.links.department} className="text-gold" target="_blank" rel="noreferrer">
+            <a href={site.links.department} className="text-accent" target="_blank" rel="noreferrer">
               Official department page ↗
             </a>
           </div>

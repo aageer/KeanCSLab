@@ -20,24 +20,24 @@ export default function ContactPage() {
       <div className="mt-14 grid gap-12 lg:grid-cols-2">
         <ContactForm />
         <aside className="space-y-6 text-sm leading-7">
-          <div className="border border-gold/20 p-6">
-            <p className="text-[11px] uppercase tracking-[0.22em] text-gold">
+          <div className="panel p-5 sm:p-6">
+            <p className="text-[11px] uppercase tracking-[0.22em] text-accent">
               Coordinator
             </p>
             <p className="mt-3 font-display text-2xl">{site.coordinator.name}</p>
             <p className="mt-2">
-              <a href={`mailto:${site.coordinator.email}`} className="text-gold">
+              <a href={`mailto:${site.coordinator.email}`} className="text-accent">
                 {site.coordinator.email}
               </a>
             </p>
             <p>{site.coordinator.phone}</p>
           </div>
-          <div className="border border-gold/20 p-6">
-            <p className="text-[11px] uppercase tracking-[0.22em] text-gold">
+          <div className="panel p-5 sm:p-6">
+            <p className="text-[11px] uppercase tracking-[0.22em] text-accent">
               Graduate Admissions
             </p>
             <p className="mt-3">
-              <a href={`mailto:${site.admissions.email}`} className="text-gold">
+              <a href={`mailto:${site.admissions.email}`} className="text-accent">
                 {site.admissions.email}
               </a>
             </p>

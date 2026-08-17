@@ -17,12 +17,12 @@ export default function NewsPage() {
         title="News"
         lede="Public updates from the laboratory, grounded in university pages. This is not a university press office."
       />
-      <ol className="mt-14 divide-y divide-gold/15">
+      <ol className="mt-14 divide-y divide-line">
         {news.map((item) => (
           <li key={item.slug} className="py-8">
-            <p className="font-mono text-xs text-gold">{item.date}</p>
+            <p className="font-mono text-xs text-accent">{item.date}</p>
             <h2 className="mt-2 font-display text-3xl">
-              <Link href={`/news/${item.slug}`} className="hover:text-gold">
+              <Link href={`/news/${item.slug}`} className="hover:text-accent">
                 {item.title}
               </Link>
             </h2>

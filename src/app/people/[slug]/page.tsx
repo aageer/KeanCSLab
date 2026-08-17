@@ -33,10 +33,10 @@ export default async function PersonPage({ params }: Props) {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
-      <p className="text-[11px] uppercase tracking-[0.22em] text-gold">
+      <p className="text-[11px] uppercase tracking-[0.22em] text-accent">
         {person.kind === "chair" ? "Chair" : person.kind}
       </p>
-      <h1 className="mt-3 font-display text-5xl">{person.name}</h1>
+      <h1 className="mt-3 font-display text-4xl leading-tight sm:text-5xl">{person.name}</h1>
       <p className="mt-3 text-lg text-muted">{person.title}</p>
       {person.note ? (
         <p className="mt-8 text-base leading-8">{person.note}</p>
@@ -45,7 +45,7 @@ export default async function PersonPage({ params }: Props) {
         <div>
           <dt className="text-muted">Email</dt>
           <dd>
-            <a href={`mailto:${person.email}`} className="text-gold">
+            <a href={`mailto:${person.email}`} className="text-accent">
               {person.email}
             </a>
           </dd>
@@ -62,7 +62,7 @@ export default async function PersonPage({ params }: Props) {
           <div>
             <dt className="text-muted">Researcher profile</dt>
             <dd>
-              <a href={person.profile} className="text-gold" target="_blank" rel="noreferrer">
+              <a href={person.profile} className="text-accent" target="_blank" rel="noreferrer">
                 researchers.kean.edu ↗
               </a>
             </dd>
@@ -75,7 +75,7 @@ export default async function PersonPage({ params }: Props) {
           {person.areas.map((area) => (
             <li
               key={area}
-              className="border border-gold/25 px-3 py-1 text-xs tracking-wide"
+              className="border border-line px-3 py-1 text-xs tracking-wide"
             >
               {area}
             </li>
@@ -87,7 +87,7 @@ export default async function PersonPage({ params }: Props) {
         <ul className="mt-4 space-y-2">
           {programs.map((program) => (
             <li key={program.slug}>
-              <Link href={`/research/${program.slug}`} className="text-gold">
+              <Link href={`/research/${program.slug}`} className="text-accent">
                 {program.index} · {program.title}
               </Link>
             </li>
@@ -95,7 +95,7 @@ export default async function PersonPage({ params }: Props) {
         </ul>
       </section>
       <p className="mt-14">
-        <Link href="/people" className="text-sm text-gold">
+        <Link href="/people" className="text-sm text-accent">
           ← All people
         </Link>
       </p>

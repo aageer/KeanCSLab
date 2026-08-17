@@ -28,18 +28,18 @@ export function PublicationExplorer() {
 
   return (
     <div>
-      <div className="grid gap-3 border border-gold/20 bg-card/40 p-4 md:grid-cols-3">
+      <div className="grid gap-3 border border-line bg-card p-3 sm:p-4 md:grid-cols-3">
         <input
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder="Search title, author, venue"
-          className="border border-gold/20 bg-background px-3 py-2.5 text-sm outline-none focus:border-gold"
+          className="field"
           aria-label="Search publications"
         />
         <select
           value={area}
           onChange={(event) => setArea(event.target.value)}
-          className="border border-gold/20 bg-background px-3 py-2.5 text-sm outline-none focus:border-gold"
+          className="field"
           aria-label="Filter by research area"
         >
           <option value="all">All research areas</option>
@@ -52,7 +52,7 @@ export function PublicationExplorer() {
         <select
           value={year}
           onChange={(event) => setYear(event.target.value)}
-          className="border border-gold/20 bg-background px-3 py-2.5 text-sm outline-none focus:border-gold"
+          className="field"
           aria-label="Filter by year"
         >
           <option value="all">All years</option>
@@ -66,10 +66,10 @@ export function PublicationExplorer() {
       <p className="mt-4 text-xs text-muted" aria-live="polite">
         {filtered.length} selected public records
       </p>
-      <ol className="mt-8 divide-y divide-gold/15">
+      <ol className="mt-8 divide-y divide-line">
         {filtered.map((item) => (
           <li key={item.id} className="py-6">
-            <p className="font-mono text-xs text-gold">
+            <p className="font-mono text-xs text-accent">
               {item.year} · {item.type}
             </p>
             <h2 className="mt-2 max-w-4xl font-display text-2xl leading-snug">
@@ -78,7 +78,7 @@ export function PublicationExplorer() {
                   href={item.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:text-gold"
+                  className="hover:text-accent"
                 >
                   {item.title}
                 </a>

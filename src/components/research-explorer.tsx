@@ -29,23 +29,23 @@ export function ResearchExplorer() {
 
   return (
     <div>
-      <div className="flex flex-col gap-4 border border-gold/20 bg-card/40 p-4 sm:flex-row sm:items-center">
+      <div className="flex flex-col gap-3 border border-line bg-card p-3 sm:flex-row sm:items-center sm:p-4">
         <label className="relative flex-1">
           <span className="sr-only">Search research programs</span>
-          <Search className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-gold" />
+          <Search className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-accent" />
           <input
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Search methods, questions, datasets…"
-            className="w-full rounded-none border border-gold/20 bg-background py-2.5 pr-3 pl-10 text-sm outline-none focus:border-gold"
+            className="field pl-10"
           />
         </label>
-        <label className="text-sm">
+        <label className="text-sm sm:w-64">
           <span className="sr-only">Filter by program</span>
           <select
             value={focus}
             onChange={(event) => setFocus(event.target.value)}
-            className="w-full border border-gold/20 bg-background px-3 py-2.5 text-sm outline-none focus:border-gold sm:w-64"
+            className="field"
           >
             <option value="all">All programs</option>
             {researchAreas.map((area) => (
@@ -63,18 +63,18 @@ export function ResearchExplorer() {
         {filtered.map((area) => (
           <li
             key={area.slug}
-            className="group border-t border-gold/15 pt-8 first:border-t-0 first:pt-0"
+            className="group border-t border-line pt-8 first:border-t-0 first:pt-0"
           >
             <Link href={`/research/${area.slug}`} className="block">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-                <p className="font-mono text-xs text-gold">{area.index}</p>
+                <p className="font-mono text-xs text-accent">{area.index}</p>
                 <div className="max-w-3xl">
-                  <h2 className="font-display text-3xl group-hover:text-gold">
+                  <h2 className="font-display text-2xl group-hover:text-accent sm:text-3xl">
                     {area.title}
                   </h2>
                   <p className="mt-3 text-muted">{area.short}</p>
                   <p className="mt-4 max-w-2xl leading-7">{area.lede}</p>
-                  <p className="mt-5 text-sm text-gold">Open the program →</p>
+                  <p className="mt-5 text-sm text-accent">Open the program →</p>
                 </div>
               </div>
             </Link>

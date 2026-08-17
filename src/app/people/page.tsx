@@ -20,10 +20,10 @@ function PersonGrid({
         <li key={person.slug}>
           <Link
             href={`/people/${person.slug}`}
-            className="block h-full border border-gold/15 p-5 transition-colors hover:border-gold/40 hover:bg-card/40"
+            className="block h-full border border-line bg-card p-5 transition-colors hover:border-line-strong"
           >
             <p className="font-display text-2xl">{person.name}</p>
-            <p className="mt-1 text-sm text-gold">{person.title}</p>
+            <p className="mt-1 text-sm text-accent">{person.title}</p>
             <p className="mt-3 text-sm leading-6 text-muted">
               {person.areas.join(" · ")}
             </p>
@@ -54,7 +54,7 @@ export default function PeoplePage() {
         Source:{" "}
         <a
           href="https://www.kean.edu/department-3-2-0"
-          className="text-gold"
+          className="text-accent"
           target="_blank"
           rel="noreferrer"
         >

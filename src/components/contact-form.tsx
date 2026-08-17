@@ -32,7 +32,8 @@ export function ContactForm() {
           required
           value={name}
           onChange={(event) => setName(event.target.value)}
-          className="border border-gold/20 bg-background px-3 py-2.5 outline-none focus:border-gold"
+          className="field"
+          autoComplete="name"
         />
       </label>
       <label className="grid gap-2 text-sm">
@@ -42,7 +43,8 @@ export function ContactForm() {
           type="email"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
-          className="border border-gold/20 bg-background px-3 py-2.5 outline-none focus:border-gold"
+          className="field"
+          autoComplete="email"
         />
       </label>
       <label className="grid gap-2 text-sm">
@@ -50,7 +52,7 @@ export function ContactForm() {
         <select
           value={topic}
           onChange={(event) => setTopic(event.target.value)}
-          className="border border-gold/20 bg-background px-3 py-2.5 outline-none focus:border-gold"
+          className="field"
         >
           <option>Ph.D. inquiry</option>
           <option>Faculty collaboration</option>
@@ -65,14 +67,11 @@ export function ContactForm() {
           rows={6}
           value={message}
           onChange={(event) => setMessage(event.target.value)}
-          className="border border-gold/20 bg-background px-3 py-2.5 outline-none focus:border-gold"
+          className="field min-h-40"
           placeholder="Name the research program you read, the question you want to work on, and one paper that changed your mind."
         />
       </label>
-      <button
-        type="submit"
-        className="justify-self-start bg-gold px-5 py-2.5 text-sm font-medium text-navy-deep transition-opacity hover:opacity-90"
-      >
+      <button type="submit" className="btn-primary justify-self-start">
         Open email to the coordinator
       </button>
       <p className="text-xs leading-5 text-muted">
