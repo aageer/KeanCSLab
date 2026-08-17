@@ -25,8 +25,8 @@ export const news: NewsItem[] = [
   {
     slug: "research-portal-launch",
     date: "2026-08-17",
-    title: "Computer Science Laboratory site is public",
-    dek: "The Computer Science Laboratory at Kean University publishes research areas, methods, faculty, and selected publications.",
+    title: "Kean CS Lab site is public",
+    dek: "Kean CS Lab publishes research areas, methods, faculty, and selected publications.",
     body: [
       "The laboratory publishes research areas in enough depth to write a first email that is not generic: questions, methods, datasets, and who works on what.",
       "Faculty names, offices, and areas are drawn from the public departmental directory. Featured papers are drawn from public researcher profiles and venue pages. Where a detail is still unpublished — assistantships, formal handbook language — the site says so and points to Graduate Admissions.",

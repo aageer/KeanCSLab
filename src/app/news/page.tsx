@@ -6,7 +6,7 @@ import { news } from "@/lib/data/news";
 export const metadata: Metadata = {
   title: "News",
   description:
-    "News from the Computer Science Laboratory at Kean University.",
+    "News from Kean CS Lab at Kean University.",
 };
 
 export default function NewsPage() {

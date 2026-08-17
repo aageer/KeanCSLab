@@ -1,9 +1,9 @@
 export const site = {
-  name: "Computer Science Laboratory",
-  formalName: "Computer Science Laboratory at Kean University",
+  name: "Kean CS Lab",
+  formalName: "Kean CS Lab",
   tagline: "Kean University",
   description:
-    "The Computer Science Laboratory at Kean University — doctoral research in artificial intelligence, cybersecurity, data science, and computing systems.",
+    "Kean CS Lab — doctoral research in artificial intelligence, cybersecurity, data science, and computing systems at Kean University.",
   url: "https://kean-cs-lab.vercel.app",
   university: "Kean University",
   department: "Department of Computer Science and Technology",

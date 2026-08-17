@@ -5,7 +5,7 @@ import { ResearchExplorer } from "@/components/research-explorer";
 export const metadata: Metadata = {
   title: "Research",
   description:
-    "Research areas at the Computer Science Laboratory, Kean University — questions, methods, datasets, benchmarks, and faculty.",
+    "Research areas at Kean CS Lab — questions, methods, datasets, benchmarks, and faculty.",
 };
 
 export default function ResearchPage() {

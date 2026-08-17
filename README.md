@@ -1,4 +1,4 @@
-# Computer Science Laboratory
+# Kean CS Lab
 
 Kean University, Union, NJ.
 

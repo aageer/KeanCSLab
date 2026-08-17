@@ -19,7 +19,7 @@ export function ContactForm() {
       message,
     ].join("\n");
     const href = `mailto:${site.coordinator.email}?subject=${encodeURIComponent(
-      `[Kean Computer Science Laboratory] ${topic}`,
+      `[Kean CS Lab] ${topic}`,
     )}&body=${encodeURIComponent(body)}`;
     window.location.href = href;
   }

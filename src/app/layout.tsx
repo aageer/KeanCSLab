@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   description: site.description,
   keywords: [
     "Kean University",
-    "Computer Science Laboratory",
+    "Kean CS Lab",
     "Computer Science PhD",
     "artificial intelligence",
     "cybersecurity",

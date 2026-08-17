@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact the Computer Science Laboratory coordinator or Kean Graduate Admissions.",
+    "Contact the Kean CS Lab coordinator or Kean Graduate Admissions.",
 };
 
 export default function ContactPage() {

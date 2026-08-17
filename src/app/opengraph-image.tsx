@@ -29,7 +29,7 @@ export default function OpenGraphImage() {
           Kean University · Union, NJ
         </div>
         <div style={{ fontSize: 64, lineHeight: 1.05, marginTop: 24 }}>
-          Computer Science Laboratory
+          Kean CS Lab
         </div>
         <div style={{ fontSize: 28, marginTop: 20, color: "#9bb0c4" }}>
           Kean University

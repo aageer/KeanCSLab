@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "About the Computer Science Laboratory in the Department of Computer Science and Technology at Kean University.",
+    "About Kean CS Lab in the Department of Computer Science and Technology at Kean University.",
 };
 
 export default function AboutPage() {
