@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Ph.D. Program",
   description:
-    "Computer Science Ph.D. at Kean University — founding cohort for Fall 2026, hosted by the State-of-the-Art Computer Science Laboratory (SOTA).",
+    "Computer Science Ph.D. at Kean University — founding cohort for Fall 2026.",
 };
 
 export default function PhdPage() {
@@ -118,7 +118,7 @@ export default function PhdPage() {
             Coordinator · {site.coordinator.email}
           </a>
           <Link href="/contact" className="text-gold">
-            Contact SOTA →
+            Contact the laboratory →
           </Link>
         </div>
       </section>

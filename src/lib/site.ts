@@ -1,9 +1,9 @@
 export const site = {
-  name: "SOTA",
-  formalName: "State-of-the-Art Computer Science Laboratory",
+  name: "Computer Science Laboratory",
+  formalName: "Computer Science Laboratory at Kean University",
   tagline: "Kean University",
   description:
-    "The State-of-the-Art Computer Science Laboratory (SOTA) at Kean University — doctoral research in artificial intelligence, cybersecurity, data science, and computing systems.",
+    "The Computer Science Laboratory at Kean University — doctoral research in artificial intelligence, cybersecurity, data science, and computing systems.",
   url: "https://kean-cs-lab.vercel.app",
   university: "Kean University",
   department: "Department of Computer Science and Technology",

@@ -30,9 +30,8 @@ export const metadata: Metadata = {
   },
   description: site.description,
   keywords: [
-    "SOTA",
-    "State-of-the-Art Computer Science Laboratory",
     "Kean University",
+    "Computer Science Laboratory",
     "Computer Science PhD",
     "artificial intelligence",
     "cybersecurity",
@@ -45,12 +44,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: site.url,
     siteName: site.name,
-    title: `${site.name} | ${site.formalName}`,
+    title: `${site.name} | ${site.university}`,
     description: site.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} | ${site.formalName}`,
+    title: `${site.name} | ${site.university}`,
     description: site.description,
   },
   alternates: {

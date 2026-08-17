@@ -15,17 +15,17 @@ export default function HomePage() {
           <p className="reveal text-[11px] uppercase tracking-[0.32em] text-gold">
             {site.university} · {site.location}
           </p>
-          <h1 className="reveal reveal-delay-1 mt-6 font-display text-7xl leading-none tracking-tight sm:text-8xl lg:text-9xl">
+          <h1 className="reveal reveal-delay-1 mt-6 max-w-5xl font-display text-5xl leading-[0.95] tracking-tight sm:text-7xl">
             {site.name}
           </h1>
-          <p className="reveal reveal-delay-2 mt-5 max-w-3xl font-display text-2xl leading-snug text-gold sm:text-3xl">
-            {site.formalName}
+          <p className="reveal reveal-delay-2 mt-5 font-display text-2xl text-gold sm:text-3xl">
+            {site.university}
           </p>
           <p className="reveal reveal-delay-2 mt-8 max-w-2xl text-lg leading-8 text-muted">
-            The {site.formalName} ({site.name}) is the research laboratory of
-            the {site.department}. Faculty and doctoral students work in
-            artificial intelligence, cybersecurity, data science, and allied
-            computing systems. Founding Ph.D. cohort: Fall 2026.
+            The research laboratory of the {site.department}. Faculty and
+            doctoral students work in artificial intelligence, cybersecurity,
+            data science, and allied computing systems. Founding Ph.D. cohort:
+            Fall 2026.
           </p>
           <div className="reveal reveal-delay-3 mt-10 flex flex-col gap-3 sm:flex-row">
             <Link
@@ -63,7 +63,7 @@ export default function HomePage() {
               dissertation.
             </p>
             <p>
-              This site publishes {site.name} research programs, faculty as
+              This site publishes the laboratory’s research areas, faculty as
               listed on the public directory, and selected papers. It does not
               speak for Graduate Admissions and does not invent handbook
               language. Official eligibility, assistantships, and the

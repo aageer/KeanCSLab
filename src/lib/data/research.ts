@@ -137,7 +137,7 @@ export const researchAreas: ResearchArea[] = [
     short: "Zero trust, sensing, and the right to be unobserved.",
     lede: "Security is not a perimeter. It is a set of assumptions you can state — and a set you can test.",
     statement:
-      "Faculty work ranges from cybersecurity and software assurance to privacy-preserving sensing and zero-trust designs for smart environments. The Ph.D. program names cybersecurity as a priority domain. SOTA treats that as a research area: threat models, measurements, and systems you can evaluate in a laboratory you control — not a certification checklist.",
+      "Faculty work ranges from cybersecurity and software assurance to privacy-preserving sensing and zero-trust designs for smart environments. The Ph.D. program names cybersecurity as a priority domain. This laboratory treats that as a research area: threat models, measurements, and systems you can evaluate in a setting you control — not a certification checklist.",
     questions: [
       "What does zero trust look like when the ‘enterprise’ is a home full of sensors?",
       "How do we learn from mobile and IoT traces without reconstituting the person?",

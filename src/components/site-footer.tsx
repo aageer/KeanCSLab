@@ -7,9 +7,9 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3">
         <div>
           <p className="font-display text-2xl">{site.name}</p>
-          <p className="mt-1 text-sm text-gold">{site.formalName}</p>
+          <p className="mt-1 text-sm text-gold">{site.university}</p>
           <p className="mt-3 max-w-sm text-sm leading-6 text-muted">
-            Research laboratory of the {site.department} at {site.university}.
+            Research laboratory of the {site.department}.
           </p>
         </div>
         <div>

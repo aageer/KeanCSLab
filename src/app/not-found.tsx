@@ -6,7 +6,7 @@ export default function NotFound() {
       <p className="font-mono text-xs text-gold">404</p>
       <h1 className="mt-4 font-display text-5xl">Page not found</h1>
       <p className="mt-4 text-muted">
-        This address is not part of SOTA. Return home or open Research.
+        This address is not part of the Computer Science Laboratory. Return home or open Research.
       </p>
       <div className="mt-8 flex gap-4 text-sm">
         <Link href="/" className="text-gold">

@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "About the State-of-the-Art Computer Science Laboratory (SOTA) in the Department of Computer Science and Technology at Kean University.",
+    "About the Computer Science Laboratory in the Department of Computer Science and Technology at Kean University.",
 };
 
 export default function AboutPage() {
@@ -15,7 +15,7 @@ export default function AboutPage() {
       <PageHeader
         kicker="About"
         title="The Laboratory"
-        lede={`${site.formalName} (${site.name}) is the research laboratory of the ${site.department}: research areas, people, methods, and selected publications.`}
+        lede={`${site.formalName} is the research laboratory of the ${site.department}: research areas, people, methods, and selected publications.`}
       />
       <div className="mt-16 grid gap-14 lg:grid-cols-12">
         <article className="space-y-6 text-base leading-8 lg:col-span-7">

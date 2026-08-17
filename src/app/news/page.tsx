@@ -6,7 +6,7 @@ import { news } from "@/lib/data/news";
 export const metadata: Metadata = {
   title: "News",
   description:
-    "News from the State-of-the-Art Computer Science Laboratory (SOTA) at Kean University.",
+    "News from the Computer Science Laboratory at Kean University.",
 };
 
 export default function NewsPage() {
@@ -15,7 +15,7 @@ export default function NewsPage() {
       <PageHeader
         kicker="News"
         title="News"
-        lede="Public updates from SOTA, grounded in university pages. This is not a university press office."
+        lede="Public updates from the laboratory, grounded in university pages. This is not a university press office."
       />
       <ol className="mt-14 divide-y divide-gold/15">
         {news.map((item) => (

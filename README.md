@@ -1,6 +1,6 @@
-# SOTA
+# Computer Science Laboratory
 
-**State-of-the-Art Computer Science Laboratory** — Kean University, Union, NJ.
+Kean University, Union, NJ.
 
 Live: [https://kean-cs-lab.vercel.app](https://kean-cs-lab.vercel.app)
 

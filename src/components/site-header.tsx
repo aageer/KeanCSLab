@@ -20,13 +20,13 @@ export function SiteHeader() {
       >
         Skip to content
       </a>
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link href="/" className="group flex items-baseline gap-2.5">
-          <span className="font-display text-2xl tracking-tight text-foreground">
+      <div className="mx-auto flex h-[4.25rem] max-w-6xl items-center justify-between px-4 sm:px-6">
+        <Link href="/" className="group flex flex-col justify-center leading-none">
+          <span className="font-display text-[1.35rem] tracking-tight text-foreground">
             {site.name}
           </span>
-          <span className="hidden text-[10px] uppercase tracking-[0.22em] text-gold sm:inline">
-            {site.tagline}
+          <span className="mt-1 hidden text-[10px] uppercase tracking-[0.22em] text-gold sm:inline">
+            {site.university}
           </span>
         </Link>
         <nav aria-label="Primary" className="hidden items-center gap-6 md:flex">
