@@ -1,0 +1,67 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { PageHeader } from "@/components/page-header";
+import { faculty, lecturers } from "@/lib/data/people";
+
+export const metadata: Metadata = {
+  title: "People",
+  description:
+    "Faculty and instructors in Kean’s Department of Computer Science and Technology, as listed on the public directory.",
+};
+
+function PersonGrid({
+  people,
+}: {
+  people: typeof faculty;
+}) {
+  return (
+    <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+      {people.map((person) => (
+        <li key={person.slug}>
+          <Link
+            href={`/people/${person.slug}`}
+            className="block h-full border border-gold/15 p-5 transition-colors hover:border-gold/40 hover:bg-card/40"
+          >
+            <p className="font-display text-2xl">{person.name}</p>
+            <p className="mt-1 text-sm text-gold">{person.title}</p>
+            <p className="mt-3 text-sm leading-6 text-muted">
+              {person.areas.join(" · ")}
+            </p>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export default function PeoplePage() {
+  return (
+    <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <PageHeader
+        kicker="People"
+        title="The faculty the first dissertations will be written with."
+        lede="Names, titles, offices, and areas from the public Kean CST directory. Doctoral students are not invented here — the founding cohort has not yet enrolled."
+      />
+      <section className="mt-16">
+        <h2 className="font-display text-3xl">Faculty</h2>
+        <PersonGrid people={faculty} />
+      </section>
+      <section className="mt-16">
+        <h2 className="font-display text-3xl">Lecturers</h2>
+        <PersonGrid people={lecturers} />
+      </section>
+      <p className="mt-12 text-sm text-muted">
+        Source:{" "}
+        <a
+          href="https://www.kean.edu/department-3-2-0"
+          className="text-gold"
+          target="_blank"
+          rel="noreferrer"
+        >
+          kean.edu faculty directory
+        </a>
+        . Corrections welcome via the contact page.
+      </p>
+    </div>
+  );
+}

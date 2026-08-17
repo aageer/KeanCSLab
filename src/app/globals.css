@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #003667;
+  --navy-deep: #021526;
+  --navy-mid: #0a2f55;
+  --gold: #e4c36a;
+  --gold-dim: #c9a54a;
+  --mist: #8fb4d9;
+  --paper: #f4efe4;
+  --ink: #121820;
+  --rule: color-mix(in oklab, var(--gold) 35%, transparent);
+  --background: #021526;
+  --foreground: #f4efe4;
+  --muted: #9bb0c4;
+  --card: #0a2a48;
+  --ring: #e4c36a;
+}
+
+[data-theme="light"] {
+  --background: #f4efe4;
+  --foreground: #121820;
+  --muted: #4a5a6a;
+  --card: #fffdf8;
+  --navy-deep: #f4efe4;
+  --navy-mid: #e8e0d0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-navy: #003667;
+  --color-navy-deep: #021526;
+  --color-navy-mid: #0a2f55;
+  --color-gold: #e4c36a;
+  --color-gold-dim: #c9a54a;
+  --color-mist: #8fb4d9;
+  --color-paper: #f4efe4;
+  --color-ink: #121820;
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-ring: var(--ring);
+  --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Instrument Serif", "Instrument Serif Fallback", Georgia, serif;
+  --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: color-mix(in oklab, var(--gold) 40%, transparent);
+  color: var(--foreground);
+}
+
+.font-display {
+  font-family: var(--font-instrument), "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+}
+
+.hairline {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--gold-dim),
+    transparent
+  );
+  height: 1px;
+}
+
+.grid-constellation {
+  background-image:
+    radial-gradient(circle at 20% 18%, color-mix(in oklab, var(--gold) 18%, transparent) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 72% 28%, color-mix(in oklab, var(--mist) 22%, transparent) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 48% 62%, color-mix(in oklab, var(--gold) 14%, transparent) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 86% 74%, color-mix(in oklab, var(--mist) 16%, transparent) 0 1px, transparent 1.5px),
+    linear-gradient(to right, color-mix(in oklab, var(--mist) 8%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--mist) 8%, transparent) 1px, transparent 1px);
+  background-size:
+    auto,
+    auto,
+    auto,
+    auto,
+    72px 72px,
+    72px 72px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: rise 0.8s ease forwards;
+}
+
+.reveal-delay-1 { animation-delay: 80ms; }
+.reveal-delay-2 { animation-delay: 160ms; }
+.reveal-delay-3 { animation-delay: 240ms; }
+.reveal-delay-4 { animation-delay: 320ms; }
+
+@keyframes rise {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes drift {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(0, -12px, 0); }
+}
+
+.drift {
+  animation: drift 8s ease-in-out infinite alternate;
+}
