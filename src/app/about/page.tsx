@@ -4,9 +4,9 @@ import { PageHeader } from "@/components/page-header";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About the lab",
+  title: "About",
   description:
-    "What Kean CS Lab is — and is not — inside the Department of Computer Science and Technology.",
+    "About the State-of-the-Art Computer Science Laboratory (SOTA) in the Department of Computer Science and Technology at Kean University.",
 };
 
 export default function AboutPage() {
@@ -14,8 +14,8 @@ export default function AboutPage() {
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
       <PageHeader
         kicker="About"
-        title="A research commons, not a second university homepage."
-        lede="Kean CS Lab is the public face of doctoral research in the Department of Computer Science and Technology: programs, people, methods, and papers in one place."
+        title="The Laboratory"
+        lede={`${site.formalName} (${site.name}) is the research laboratory of the ${site.department}: research areas, people, methods, and selected publications.`}
       />
       <div className="mt-16 grid gap-14 lg:grid-cols-12">
         <article className="space-y-6 text-base leading-8 lg:col-span-7">
@@ -30,8 +30,8 @@ export default function AboutPage() {
             The public Ph.D. page describes Kean as New Jersey’s urban research
             university and a national R2 institution expanding its graduate
             research enterprise. Applications open in Fall 2025 for enrollment
-            in Fall 2026. That timeline is why this portal exists now: so the
-            first cohort can see the work before they apply.
+            in Fall 2026. That timeline is why {site.name} publishes the work
+            now: so the first cohort can see it before they apply.
           </p>
           <p>
             Faculty listed here are taken from the public departmental
@@ -41,15 +41,15 @@ export default function AboutPage() {
             kean.edu.
           </p>
           <p>
-            We will not invent official admissions criteria, assistantship
-            amounts, or legal claims. When the university says details are
-            “available soon,” we repeat that sentence.
+            {site.name} does not invent official admissions criteria,
+            assistantship amounts, or legal claims. When the university says
+            details are “available soon,” this site repeats that sentence.
           </p>
         </article>
         <aside className="space-y-8 lg:col-span-5">
           <div className="border border-gold/20 p-6">
             <p className="text-[11px] uppercase tracking-[0.22em] text-gold">
-              Facts we can stand on
+              At a glance
             </p>
             <dl className="mt-5 space-y-4 text-sm">
               <div>
@@ -79,7 +79,7 @@ export default function AboutPage() {
               People →
             </Link>
             <Link href="/research" className="text-gold">
-              Research portal →
+              Research →
             </Link>
             <a href={site.links.department} className="text-gold" target="_blank" rel="noreferrer">
               Official department page ↗

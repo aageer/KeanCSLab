@@ -25,14 +25,15 @@ const instrument = Instrument_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — ${site.university} Computer Science`,
-    template: `%s · ${site.name}`,
+    default: `${site.name} | ${site.university}`,
+    template: `%s | ${site.name}`,
   },
   description: site.description,
   keywords: [
+    "SOTA",
+    "State-of-the-Art Computer Science Laboratory",
     "Kean University",
     "Computer Science PhD",
-    "Kean CS Lab",
     "artificial intelligence",
     "cybersecurity",
     "data science",
@@ -44,12 +45,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: site.url,
     siteName: site.name,
-    title: `${site.name} — Doctoral research commons`,
+    title: `${site.name} | ${site.formalName}`,
     description: site.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} — Doctoral research commons`,
+    title: `${site.name} | ${site.formalName}`,
     description: site.description,
   },
   alternates: {
@@ -61,6 +62,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ResearchOrganization",
   name: site.formalName,
+  alternateName: site.name,
   url: site.url,
   description: site.description,
   parentOrganization: {

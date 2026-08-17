@@ -15,26 +15,30 @@ export default function HomePage() {
           <p className="reveal text-[11px] uppercase tracking-[0.32em] text-gold">
             {site.university} · {site.location}
           </p>
-          <h1 className="reveal reveal-delay-1 mt-6 max-w-5xl font-display text-5xl leading-[0.95] text-balance sm:text-7xl lg:text-8xl">
-            Research that can hold a city.
+          <h1 className="reveal reveal-delay-1 mt-6 font-display text-7xl leading-none tracking-tight sm:text-8xl lg:text-9xl">
+            {site.name}
           </h1>
+          <p className="reveal reveal-delay-2 mt-5 max-w-3xl font-display text-2xl leading-snug text-gold sm:text-3xl">
+            {site.formalName}
+          </p>
           <p className="reveal reveal-delay-2 mt-8 max-w-2xl text-lg leading-8 text-muted">
-            The doctoral research commons for Kean’s Computer Science Ph.D. —
-            AI, security, data, and the people who have to live with the
-            systems. Founding cohort: Fall 2026.
+            The {site.formalName} ({site.name}) is the research laboratory of
+            the {site.department}. Faculty and doctoral students work in
+            artificial intelligence, cybersecurity, data science, and allied
+            computing systems. Founding Ph.D. cohort: Fall 2026.
           </p>
           <div className="reveal reveal-delay-3 mt-10 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/research"
               className="bg-gold px-6 py-3 text-center text-sm font-medium text-navy-deep"
             >
-              Enter the research portal
+              Research
             </Link>
             <Link
               href="/phd"
               className="border border-gold/40 px-6 py-3 text-center text-sm text-gold"
             >
-              Ph.D. recruiting
+              Ph.D. Program
             </Link>
           </div>
         </div>
@@ -44,28 +48,30 @@ export default function HomePage() {
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <p className="text-[11px] uppercase tracking-[0.28em] text-gold">
-              Mission
+              The Laboratory
             </p>
             <h2 className="mt-4 font-display text-4xl">
-              A lab voice for an R2 department that is building in public.
+              Doctoral research in the {site.department}.
             </h2>
           </div>
           <div className="space-y-6 text-base leading-8 text-muted lg:col-span-8">
             <p>
-              {site.department} sits in the {site.college}. The public Ph.D.
-              page names three high-impact domains — artificial intelligence,
-              cybersecurity, and data science — and a research-centered
-              curriculum built around an original dissertation.
+              {site.department} is housed in the {site.college}. The public
+              Ph.D. page names three high-impact domains — artificial
+              intelligence, cybersecurity, and data science — and a
+              research-centered curriculum built around an original
+              dissertation.
             </p>
             <p>
-              This site is the map: programs with methods, not just cards;
-              faculty as they appear on the public directory; papers you can
-              open. We do not speak for Graduate Admissions, and we do not
-              invent handbook language. We do expect a first email that has
-              already read a program page.
+              This site publishes {site.name} research programs, faculty as
+              listed on the public directory, and selected papers. It does not
+              speak for Graduate Admissions and does not invent handbook
+              language. Official eligibility, assistantships, and the
+              application live on kean.edu.
             </p>
             <p>
-              Coordinator: {site.coordinator.name} · {site.coordinator.email}
+              Program coordinator: {site.coordinator.name} ·{" "}
+              {site.coordinator.email}
             </p>
           </div>
         </div>
@@ -77,12 +83,12 @@ export default function HomePage() {
         <div className="flex items-end justify-between gap-6">
           <div>
             <p className="text-[11px] uppercase tracking-[0.28em] text-gold">
-              Research programs
+              Research
             </p>
-            <h2 className="mt-3 font-display text-4xl">Six rooms, one lab.</h2>
+            <h2 className="mt-3 font-display text-4xl">Research areas</h2>
           </div>
           <Link href="/research" className="hidden text-sm text-gold sm:inline">
-            Full portal →
+            All research →
           </Link>
         </div>
         <div className="mt-12 grid gap-px bg-gold/15 sm:grid-cols-2">
@@ -103,9 +109,9 @@ export default function HomePage() {
       <section className="border-y border-gold/15 bg-card/30">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
           <p className="text-[11px] uppercase tracking-[0.28em] text-gold">
-            Featured papers
+            Publications
           </p>
-          <h2 className="mt-3 font-display text-4xl">From the public record.</h2>
+          <h2 className="mt-3 font-display text-4xl">Selected publications</h2>
           <ol className="mt-10 divide-y divide-gold/15">
             {papers.map((paper) => (
               <li key={paper.id} className="py-6">
@@ -131,26 +137,26 @@ export default function HomePage() {
       <section className="mx-auto grid max-w-6xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2">
         <div className="border border-gold/20 p-8">
           <p className="text-[11px] uppercase tracking-[0.28em] text-gold">
-            Ph.D.
+            Ph.D. Program
           </p>
           <h2 className="mt-3 font-display text-3xl">
-            Founding doctoral cohort, Fall 2026.
+            Founding doctoral cohort, Fall 2026
           </h2>
           <p className="mt-4 leading-7 text-muted">
             {site.admissions.note} Fall deadline {site.admissions.fallDeadline}.
-            Assistantship details are still published by the university — ask
-            the coordinator, do not infer them from this site.
+            Assistantship details are published by the university. Confirm them
+            with the coordinator or Graduate Admissions.
           </p>
           <Link
             href="/phd"
             className="mt-6 inline-block bg-gold px-5 py-2.5 text-sm text-navy-deep"
           >
-            How to apply
+            Ph.D. Program
           </Link>
         </div>
         <div>
           <p className="text-[11px] uppercase tracking-[0.28em] text-gold">
-            Updates
+            News
           </p>
           <ul className="mt-6 space-y-5">
             {news.slice(0, 3).map((item) => (

@@ -7,9 +7,9 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3">
         <div>
           <p className="font-display text-2xl">{site.name}</p>
+          <p className="mt-1 text-sm text-gold">{site.formalName}</p>
           <p className="mt-3 max-w-sm text-sm leading-6 text-muted">
-            Research commons for the {site.department} at {site.university} —{" "}
-            {site.college}.
+            Research laboratory of the {site.department} at {site.university}.
           </p>
         </div>
         <div>
@@ -63,8 +63,8 @@ export function SiteFooter() {
             </li>
           </ul>
           <p className="mt-6 text-xs leading-5 text-muted">
-            This portal is a lab research site. Admissions, policy, and
-            assistantship decisions are made by the university — not by this
+            This is a laboratory research site. Admissions, policy, and
+            assistantship decisions are made by the university, not by this
             website.
           </p>
         </div>

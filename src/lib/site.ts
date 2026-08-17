@@ -1,9 +1,9 @@
 export const site = {
-  name: "Kean CS Lab",
-  formalName: "Kean Computer Science Lab",
-  tagline: "Doctoral research commons",
+  name: "SOTA",
+  formalName: "State-of-the-Art Computer Science Laboratory",
+  tagline: "Kean University",
   description:
-    "Research portal for the Kean University Computer Science Ph.D. community — AI, cybersecurity, data science, HCI, and intelligent systems in Union, New Jersey.",
+    "The State-of-the-Art Computer Science Laboratory (SOTA) at Kean University — doctoral research in artificial intelligence, cybersecurity, data science, and computing systems.",
   url: "https://kean-cs-lab.vercel.app",
   university: "Kean University",
   department: "Department of Computer Science and Technology",

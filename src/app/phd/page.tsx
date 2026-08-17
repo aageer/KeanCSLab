@@ -5,18 +5,18 @@ import { researchAreas } from "@/lib/data/research";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Ph.D. students",
+  title: "Ph.D. Program",
   description:
-    "Recruiting the founding Computer Science Ph.D. cohort at Kean University for Fall 2026.",
+    "Computer Science Ph.D. at Kean University — founding cohort for Fall 2026, hosted by the State-of-the-Art Computer Science Laboratory (SOTA).",
 };
 
 export default function PhdPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
       <PageHeader
-        kicker="Ph.D."
-        title="We are recruiting the first doctoral cohort. There is no invented roster."
-        lede="Applications open Fall 2025 for enrollment in Fall 2026. This page restates what Kean has published and tells you how to write us. It is not the application."
+        kicker="Ph.D. Program"
+        title="Doctoral study"
+        lede="Applications open Fall 2025 for enrollment in Fall 2026. This page restates what Kean has published. It is not the application. The founding cohort has not yet enrolled; no student roster is listed."
       />
 
       <section className="mt-16 grid gap-10 lg:grid-cols-2">
@@ -118,7 +118,7 @@ export default function PhdPage() {
             Coordinator · {site.coordinator.email}
           </a>
           <Link href="/contact" className="text-gold">
-            Lab contact form →
+            Contact SOTA →
           </Link>
         </div>
       </section>

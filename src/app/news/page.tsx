@@ -5,7 +5,8 @@ import { news } from "@/lib/data/news";
 
 export const metadata: Metadata = {
   title: "News",
-  description: "Updates from the Kean CS Lab research commons.",
+  description:
+    "News from the State-of-the-Art Computer Science Laboratory (SOTA) at Kean University.",
 };
 
 export default function NewsPage() {
@@ -13,8 +14,8 @@ export default function NewsPage() {
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
       <PageHeader
         kicker="News"
-        title="What we can say in public, when we can say it."
-        lede="Lab-voice updates grounded in public university pages. Not a press office."
+        title="News"
+        lede="Public updates from SOTA, grounded in university pages. This is not a university press office."
       />
       <ol className="mt-14 divide-y divide-gold/15">
         {news.map((item) => (

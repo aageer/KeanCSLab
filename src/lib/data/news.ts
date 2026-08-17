@@ -15,9 +15,9 @@ export const news: NewsItem[] = [
     title: "Computer Science Ph.D. applications open for Fall 2026",
     dek: "Kean’s doctoral program in computer science is recruiting its founding cohort. Applications open Fall 2025; Fall admission deadline is January 15.",
     body: [
-      "The Department of Computer Science and Technology is launching a Ph.D. in Computer Science, with applications opening in Fall 2025 for enrollment in Fall 2026. The public program page names three priority domains: artificial intelligence, cybersecurity, and data science — the same spine this lab portal is organized around.",
+      "The Department of Computer Science and Technology is launching a Ph.D. in Computer Science, with applications opening in Fall 2025 for enrollment in Fall 2026. The public program page names three priority domains: artificial intelligence, cybersecurity, and data science — the same spine SOTA is organized around.",
       "Kean describes the degree as research-centered, including substantial doctoral research credit and a dissertation that contributes original work to the field. Faculty mentorship, facilities in the Hennings College of Science, Mathematics and Technology, and the Union / New York metro location are the stated setting.",
-      "This site is a research commons for that community: areas, methods, people, and a curated list of public faculty publications. It is not a substitute for Graduate Admissions. Official eligibility, assistantship details, and the application itself live on Kean’s program and admissions pages.",
+      "SOTA publishes research areas, methods, people, and a curated list of public faculty publications. It is not a substitute for Graduate Admissions. Official eligibility, assistantship details, and the application itself live on Kean’s program and admissions pages.",
     ],
     href: "https://www.kean.edu/academics/programs/computer-science-phd",
     hrefLabel: "Official Ph.D. program page",
@@ -25,12 +25,12 @@ export const news: NewsItem[] = [
   {
     slug: "research-portal-launch",
     date: "2026-08-17",
-    title: "Kean CS Lab research portal goes live",
-    dek: "A single public map of research areas, methods, faculty, and selected publications for doctoral students and collaborators.",
+    title: "SOTA laboratory site is public",
+    dek: "The State-of-the-Art Computer Science Laboratory publishes research areas, methods, faculty, and selected publications.",
     body: [
-      "Doctoral recruiting fails when the work is invisible. This portal publishes the lab’s research programs in enough depth to write a first email that is not generic: questions, methods, datasets, and who actually works on what.",
-      "Faculty names, offices, and areas are drawn from the public departmental directory. Featured papers are drawn from public researcher profiles and venue pages. Where a detail is still moving — assistantships, formal handbook language — we say so and point to Graduate Admissions.",
-      "If you are a prospective Ph.D. student, start at Research, read one area page all the way through, then write the faculty whose questions you can already improve.",
+      "SOTA publishes research areas in enough depth to write a first email that is not generic: questions, methods, datasets, and who works on what.",
+      "Faculty names, offices, and areas are drawn from the public departmental directory. Featured papers are drawn from public researcher profiles and venue pages. Where a detail is still unpublished — assistantships, formal handbook language — the site says so and points to Graduate Admissions.",
+      "Prospective Ph.D. students should start at Research, read one area page in full, then write the faculty whose questions they can already improve.",
     ],
   },
   {

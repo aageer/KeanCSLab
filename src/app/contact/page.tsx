@@ -5,7 +5,8 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Write the Kean CS Lab coordinator or Graduate Admissions.",
+  description:
+    "Contact the State-of-the-Art Computer Science Laboratory (SOTA) coordinator or Kean Graduate Admissions.",
 };
 
 export default function ContactPage() {
@@ -13,8 +14,8 @@ export default function ContactPage() {
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
       <PageHeader
         kicker="Contact"
-        title="Write after you have read a program page."
-        lede="The form opens mail to the Ph.D. coordinator. Admissions questions should also go to Graduate Admissions."
+        title="Contact"
+        lede="Write after you have read a research area page. The form opens mail to the Ph.D. coordinator. Admissions questions should also go to Graduate Admissions."
       />
       <div className="mt-14 grid gap-12 lg:grid-cols-2">
         <ContactForm />

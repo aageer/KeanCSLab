@@ -1,12 +1,12 @@
-# Kean CS Lab
+# SOTA
 
-Doctoral research commons for the Department of Computer Science and Technology at Kean University (Union, NJ).
+**State-of-the-Art Computer Science Laboratory** — Kean University, Union, NJ.
 
 Live: [https://kean-cs-lab.vercel.app](https://kean-cs-lab.vercel.app)
 
 ## What this is
 
-A public research portal for the Computer Science Ph.D. community: programs, methods, faculty, selected publications, recruiting, and contact. Faculty listings follow the [public directory](https://www.kean.edu/department-3-2-0). Admissions and policy live on [kean.edu](https://www.kean.edu/academics/programs/computer-science-phd).
+The public research site for the Computer Science Ph.D. community: research areas, methods, faculty, selected publications, doctoral recruiting, and contact. Faculty listings follow the [public directory](https://www.kean.edu/department-3-2-0). Admissions and policy live on [kean.edu](https://www.kean.edu/academics/programs/computer-science-phd).
 
 ## Stack
 

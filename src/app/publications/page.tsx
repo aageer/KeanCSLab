@@ -13,8 +13,8 @@ export default function PublicationsPage() {
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
       <PageHeader
         kicker="Publications"
-        title="A curated public record — not a complete bibliography."
-        lede="Titles and links are taken from public Kean researcher profiles, ORCID, and venue pages. Filter by program or year. If a citation is incomplete, follow the outbound link."
+        title="Publications"
+        lede="A selected public record, not a complete bibliography. Titles and links are taken from public Kean researcher profiles, ORCID, and venue pages."
       />
       <div className="mt-14">
         <PublicationExplorer />

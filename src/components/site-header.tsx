@@ -21,8 +21,8 @@ export function SiteHeader() {
         Skip to content
       </a>
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link href="/" className="group flex items-baseline gap-2">
-          <span className="font-display text-xl tracking-tight text-foreground">
+        <Link href="/" className="group flex items-baseline gap-2.5">
+          <span className="font-display text-2xl tracking-tight text-foreground">
             {site.name}
           </span>
           <span className="hidden text-[10px] uppercase tracking-[0.22em] text-gold sm:inline">

@@ -94,7 +94,7 @@ export default async function ResearchDetailPage({ params }: Props) {
         <h2 className="font-display text-3xl">Who this is for</h2>
         <p className="mt-4 max-w-3xl leading-7">{area.phdFit}</p>
         <Link href="/phd" className="mt-6 inline-block text-sm text-gold">
-          Ph.D. recruiting →
+          Ph.D. Program →
         </Link>
       </section>
 

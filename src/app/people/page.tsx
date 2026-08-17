@@ -39,8 +39,8 @@ export default function PeoplePage() {
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
       <PageHeader
         kicker="People"
-        title="The faculty the first dissertations will be written with."
-        lede="Names, titles, offices, and areas from the public Kean CST directory. Doctoral students are not invented here — the founding cohort has not yet enrolled."
+        title="People"
+        lede="Names, titles, offices, and areas from the public Kean CST directory. Doctoral students will be listed after the founding cohort enrolls."
       />
       <section className="mt-16">
         <h2 className="font-display text-3xl">Faculty</h2>
